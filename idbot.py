@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 # coding: utf-8
 
-__author__ = "Benny <benny.think@gmail.com>"
+# __author__ = "Benny <benny.think@gmail.com>"
 
 import logging
 import os
@@ -14,10 +14,10 @@ from tgbot_ping import get_runtime
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(filename)s [%(levelname)s]: %(message)s')
 
-PROXY = os.getenv("PROXY")
-TOKEN = os.getenv("TOKEN")
-APP_ID = os.getenv("APP_ID")
-APP_HASH = os.getenv("APP_HASH")
+# PROXY = os.getenv("PROXY")
+TOKEN = os.getenv("6365754390:AAGoFdPmzmc-dVg9cWoSSRHrBr7qry3Ri9Q")
+APP_ID = os.getenv("27095766")
+APP_HASH = os.getenv("b999cb4c779f8181ae2ec4aa78979d89")
 
 # telegram DC map: https://docs.pyrogram.org/faq/what-are-the-ip-addresses-of-telegram-data-centers
 DC_MAP = {
@@ -31,12 +31,12 @@ DC_MAP = {
 
 def create_app():
     _app = Client("idbot", APP_ID, APP_HASH, bot_token=TOKEN)
-    if PROXY:
-        _app.proxy = dict(
-            scheme="socks5",
-            hostname=PROXY.split(":")[0],
-            port=int(PROXY.split(":")[1])
-        )
+    # if PROXY:
+    #     _app.proxy = dict(
+    #         scheme="socks5",
+    #         hostname=PROXY.split(":")[0],
+    #         port=int(PROXY.split(":")[1])
+    #     )
 
     return _app
 
