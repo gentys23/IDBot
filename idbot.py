@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 # coding: utf-8
 
-# __author__ = "Benny <benny.think@gmail.com>"
+# __author__ = "Benny2 <benny.think@gmail.com>"
 
 import logging
 import os
